@@ -1,15 +1,33 @@
-C<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Waifu</title>
-    <style>
-        body {
-            background-image: url('Binks22BBY.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Actual Size Image</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: auto; /* allows scrolling if the image is taller than the viewport */
+    }
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background: #000; /* optional, for contrast */
+    }
+    img {
+      display: block;
+      height: 100vh;
+      width: auto;
+      max-width: 100vw;
+      object-fit: none; /* shows image at its intrinsic size */
+    }
+  </style>
+</head>
+<body>
+  <img src="Binks22BBY.png" alt="Full Height Image">
+</body>
 </html>
